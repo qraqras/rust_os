@@ -4,4 +4,5 @@ RUN apt update && apt install -y \
     qemu-system-x86 \
     xxd \
     build-essential \
-    netcat-openbsd
+    netcat-openbsd \
+ && rustup target add x86_64-unknown-uefi
