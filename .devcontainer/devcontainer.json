@@ -10,11 +10,7 @@
             "settings": {
                 "rust-analyzer.cargo.loadOutDirsFromCheck": true,
                 "rust-analyzer.cargo.allFeatures": true,
-                "rust-analyzer.checkOnSave.command": "clippy",
-                "rust-analyzer.checkOnSave.extraArgs": [
-                    "--all-targets",
-                    "--all-features"
-                ]
+                "rust-analyzer.checkOnSave": true
             }
         }
     }

@@ -5,4 +5,7 @@ RUN apt update && apt install -y \
     xxd \
     build-essential \
     netcat-openbsd \
+ && rustup component add \
+    rustfmt \
+    clippy \
  && rustup target add x86_64-unknown-uefi
