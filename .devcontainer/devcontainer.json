@@ -2,6 +2,9 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
+    "forwardPorts": [
+        5900
+    ],
     "customizations": {
         "vscode": {
             "extensions": [
@@ -13,7 +16,9 @@
                 "rust-analyzer.checkOnSave": true,
                 "[rust]": {
                     "editor.defaultFormatter": "rust-lang.rust-analyzer",
-                    "editor.formatOnSave": true
+                    "editor.formatOnSave": true,
+                    "editor.formatOnPaste": true,
+                    "editor.formatOnType": true
                 }
             }
         }
